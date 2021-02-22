@@ -1,14 +1,12 @@
 import React from 'react'
 
 export default props => {
-    
-
-
+    function action() {
+            props.onClicar(Math.random(), 'Gerado')
+        }
     return(
         <div>
-           <button onClick={() => {
-               props.onClicar(Math.random())
-           }}> Alterar </button>
+           <button onClick={action}> Alterar </button>
         </div>
     )
 }
